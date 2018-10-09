@@ -18,8 +18,11 @@ namespace Calculator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int kq = Convert.ToInt32(textBox1.Text) + Convert.ToInt32(textBox2.Text);
-            textBoxkq.Text = Convert.ToString(kq);
+            if (textBox1.Text != null && textBox2.Text != null)
+            {
+                int kq = Convert.ToInt32(textBox1.Text) + Convert.ToInt32(textBox2.Text);
+                textBoxkq.Text = Convert.ToString(kq);
+            }
         }
     }
 }
